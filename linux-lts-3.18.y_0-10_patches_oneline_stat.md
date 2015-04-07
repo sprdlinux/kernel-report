@@ -1,4 +1,3 @@
-16:58:04@~/sprdroid5.0_trunk/kernel$ git log --graph --oneline  linux-lts/linux-3.18.y 
 * 96e199f Linux 3.18.10
 * da7a053 cxl: Add missing return statement after handling AFU errror
 * 3bc64c1 cxl: Fix device_node reference counting
@@ -929,4 +928,3 @@
 * 435dcf6 gre: Set inner mac header in gro complete
 * 8407165 Fix race condition between vxlan_sock_add and vxlan_sock_release
 * b2776bf Linux 3.18
-

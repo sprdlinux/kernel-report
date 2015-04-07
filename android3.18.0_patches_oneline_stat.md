@@ -1,4 +1,3 @@
-16:54:11@~/sprdroid5.0_trunk/kernel$ git log --graph --oneline  korg/android-3.18
 * 5fa57fc usb: gadget: f_audio_source:replace deprecated API
 * b703e35 net: ipv6: fix build failure if IPV6_ROUTE_INFO config is enabled
 * 2102d8d sync: Fix memory corruption in sync_timeline_signal().
@@ -472,47 +471,6 @@
 * 65a213f mmc: sd: When resuming, try a little harder to init the card
 * acdaebe mmc: Add new API call 'sdio_reset_comm' for resetting communication with an SDIO device
 * 59d1a8e trout: Add functions for WiFi
-* 488ad4b mmc: Add concept of an 'embedded' SDIO device.
-* 9faee23 mmc: sd: Add new CONFIG_MMC_PARANOID_SD_INIT for enabling retries during SD detection
-* 46f230f mmc: Add status IRQ and status callback function to mmc platform data
-* 06bf8b1 input: keychord: Add keychord driver
-* a8b7f81 input: Add keyreset driver.
-* 014a453 input: misc: gpio_event: remove early suspend
-* 811868b Input: Generic GPIO Input device.
-* ec4fa93 Grants system server access to /proc/<pid>/oom_adj for Android applications.
-* 7114169 misc: uidstat: Adding uid stat driver to collect network statistics.
-* c7c3ec4 net: socket ioctl to reset connections matching local address
-* b23a0e3 sysfs_net_ipv4: Add sysfs-based knobs for controlling TCP window size
-* db0e079 Paranoid network.
-* 2e8e5a0 ashmem: Add shmem_set_file to mm/shmem.c
-* c2ff66b Add android_aid.h
-* fd10c98 Input: evdev - Add ioctl to block suspend while event queue is not empty.
-* 311d4b0 HACK: input: evdev: disable EVIOCREVOKE
-* d6620cf switch: switch class and GPIO drivers.
-* 012ce32 PM / Sleep: Add wake lock api wrapper on top of wakeup sources
-* a4616e0 Revert "locking: Remove deprecated smp_mb__() barriers"
-* bf47433 panic: Add board ID to panic output
-* 2cc932a ARM: add option to flush console before reboot
-* 00e6d24 cpuidle: governor: menu: don't use loadavg
-* 84b8945 sched: Enable might_sleep before initializing drivers.
-* 0e5a766 ARM: Make low-level printk work
-* 8564367 [docs] android: Add android config documentation to boot framework.
-* 36144dc [ARM] Optionally flush entire dcache from v6_dma_flush_range
-* aa49fa8 mm: Add min_free_order_shift tunable.
-* 0ddfd45 [ARM] armv6 dcc tty driver
-* d4dcc857 ARM: smp: implement arch_trigger_all_cpus_backtrace using IPI
-* 7e0e701 power: Add option to log time spent in suspend
-* ac20546 [ARM] process: Add display of memory around registers when displaying regs.
-* 4f0d286 drivers: power: Add watchdog timer to catch drivers which lockup during suspend.
-* 163a416 mmc_block: Allow more than 8 partitions per card
-* 46f230f mmc: Add status IRQ and status callback function to mmc platform data
-* 06bf8b1 input: keychord: Add keychord driver
-* a8b7f81 input: Add keyreset driver.
-* 014a453 input: misc: gpio_event: remove early suspend
-* 811868b Input: Generic GPIO Input device.
-* ec4fa93 Grants system server access to /proc/<pid>/oom_adj for Android applications.
-* 7114169 misc: uidstat: Adding uid stat driver to collect network statistics.
-* c7c3ec4 net: socket ioctl to reset connections matching local address
 * 488ad4b mmc: Add concept of an 'embedded' SDIO device.
 * 9faee23 mmc: sd: Add new CONFIG_MMC_PARANOID_SD_INIT for enabling retries during SD detection
 * 46f230f mmc: Add status IRQ and status callback function to mmc platform data
