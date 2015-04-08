@@ -1,3 +1,15 @@
+* d36c3b7 proc: uid: Adds accounting for the cputimes per uid.
+* 41db7f9 Revert "Revert "locking: Remove deprecated smp_mb__() barriers""
+* dab833f locking: Remove deprecated smp_mb__after_clear_bit()
+* 27c950a cgroup: memcg: pass correct argument to subsys_cgroup_allow_attach
+* 0274b1c arm: dcc_tty: fix armv6 dcc tty build failure
+* ad88267 video: adf: fix memblock build failure
+* e9ff62c usb: gadget: Relocate f_rndis
+* 0f8c6ce usb: gadget: Relocate f_accessory
+* c0d6c5b usb: gadget: Accessory:Migrate to USB_FUNCTION API
+* 1172f96 usb: gadget: Move gadget functions code
+* 3ed7526 usb:gadget:audio_source: Move to USB_FUNCTION API
+* 0b289c7 usb: gadget: Add function devices to the parent
 * 5fa57fc usb: gadget: f_audio_source:replace deprecated API
 * b703e35 net: ipv6: fix build failure if IPV6_ROUTE_INFO config is enabled
 * 2102d8d sync: Fix memory corruption in sync_timeline_signal().

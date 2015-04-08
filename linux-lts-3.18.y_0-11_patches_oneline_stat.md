@@ -1,3 +1,101 @@
+* f154a14 Linux 3.18.11
+* 4c23efb target/pscsi: Fix NULL pointer dereference in get_device_type
+* af8524b iscsi-target: Avoid early conn_logout_comp for iser connections
+* b54521a target: Fix virtual LUN=0 target_configure_device failure OOPs
+* 6526d32f target: Fix reference leak in target_get_sess_cmd() error path
+* 5ef7008 ARM: dts: am43xx-clocks: Fix ehrpwm tbclk data on am43xx
+* 25d96d6 ARM: dts: am33xx-clocks: Fix ehrpwm tbclk data on am33xx
+* 0755481 ARM: dts: DRA7x: Fix the bypass clock source for dpll_iva and others
+* d409e2e ARM: at91: pm: fix at91rm9200 standby
+* 1e29f16 ARM: imx6qdl-sabresd: set swbst_reg as vbus's parent reg
+* f8ac634 x86: numachip: Fix 16-bit APIC ID truncation
+* ad92776 x86/vdso: Fix the build on GCC5
+* 9ab9ee7 kvm: move advertising of KVM_CAP_IRQFD to common code
+* 1b6bd91 x86/fpu: Drop_fpu() should not assume that tsk equals current
+* 1a29c27 x86/fpu: Avoid math_state_restore() without used_math() in __restore_xstate_sig()
+* 3b38995 crypto: aesni - fix memory usage in GCM decryption
+* 73a115c crypto: arm/aes update NEON AES module to latest OpenSSL version
+* 1cd3d37 pagemap: do not leak physical addresses to non-privileged userspace
+* 016958b irqchip: armada-370-xp: Fix chained per-cpu interrupts
+* a10f289 PCI: Don't read past the end of sysfs "driver_override" buffer
+* 8941013 libsas: Fix Kernel Crash in smp_execute_task
+* c81fc59 gadgetfs: use-after-free in ->aio_read()
+* c7fd186 xen-pciback: limit guest control of command register
+* 72c7a85 xen/events: avoid NULL pointer dereference in dom0 on large machines
+* 7539114 drivers/rtc/rtc-s3c.c: add .needs_src_clk to s3c6410 RTC data
+* af6887e drm: Don't assign fbs for universal cursor support to files
+* 2c7f037 drm/vmwgfx: Fix a couple of lock dependency violations
+* c95800d drm/vmwgfx: Reorder device takedown somewhat
+* 9297c32 Revert "i2c: core: Dispose OF IRQ mapping at client removal time"
+* 5e0c3d9 nilfs2: fix deadlock of segment constructor during recovery
+* bf90526 regulator: core: Fix enable GPIO reference counting
+* 4aeea72 regulator: Only enable disabled regulators on resume
+* 084968a regulator: rk808: Set the enable time for LDOs
+* 45eacb50 bnx2x: Force fundamental reset for EEH recovery
+* 8c07b3a mtd: nand: pxa3xx: Fix PIO FIFO draining
+* 79eb59a ALSA: hda - Treat stereo-to-mono mix properly
+* 6fdbb0b ALSA: hda - Fix regression of HD-audio controller fallback modes
+* 73de0ed ALSA: hda - Add workaround for MacBook Air 5,2 built-in mic
+* b0501ca ALSA: hda - Set single_adc_amp flag for CS420x codecs
+* e2b501a ALSA: hda - Don't access stereo amps for mono channel widgets
+* 05e83bd ALSA: hda - Fix built-in mic on Compaq Presario CQ60
+* c0527b9 ALSA: control: Add sanity checks for user ctl id name string
+* 095ea4b ALSA: snd-usb: add quirks for Roland UA-22
+* 766afba spi: pl022: Fix race in giveback() leading to driver lock-up
+* f3aa910 spi: dw-mid: avoid potential NULL dereference
+* fbafcf8 spi: atmel: Fix interrupt setup for PDC transfers
+* a036688 tpm/tpm_i2c_stm_st33: Add status check when reading data on the FIFO
+* 33c5b3a tpm/ibmvtpm: Additional LE support for tpm_ibmvtpm_send
+* ea7358f cpuset: Fix cpuset sched_relax_domain_level
+* 79692ef cpuset: fix a warning when clearing configured masks in old hierarchy
+* dacb6cc cpuset: initialize effective masks when clone_children is enabled
+* d4bc18f workqueue: fix hang involving racing cancel[_delayed]_work_sync()'s for PREEMPT_NONE
+* 9c8090e can: kvaser_usb: Read all messages in a bulk-in URB buffer
+* 9baee04 can: add missing initialisations in CAN related skbuffs
+* 24cc23d ftrace: Fix ftrace enable ordering of sysctl ftrace_enabled
+* 4184e5e ftrace: Fix en(dis)able graph caller when en(dis)abling record via sysctl
+* b4521c3 ftrace: Clear REGS_EN and TRAMP_EN flags on disabling record via sysctl
+* 51ff22c Change email address for 8250_pci
+* ee7fb5b virtio_console: avoid config access from irq
+* 0b39fb1 virtio_console: init work unconditionally
+* 5850222 console: Fix console name size mismatch
+* de62b34 serial: 8250_dw: Fix deadlock in LCR workaround
+* 78df56c fuse: notify: don't move pages
+* 9525473 fuse: set stolen page uptodate
+* 9bda2fc LZ4 : fix the data abort issue
+* 7809f28 drm/radeon: drop ttm two ended allocation
+* 764725a drm/radeon: fix wait to actually occur after the signaling callback
+* 6eef27b drm/radeon: drop setting UPLL to sleep mode
+* 570f8c7 drm/radeon: fix interlaced modes on DCE8
+* 2b4cdd2 drm/radeon: do a posting read in rs600_set_irq
+* 030b28d drm/radeon: do a posting read in si_set_irq
+* 09e605b drm/radeon: do a posting read in cik_set_irq
+* a5f1220 drm/radeon: do a posting read in r600_set_irq
+* 226c628 drm/radeon: do a posting read in r100_set_irq
+* 26f16cb drm/radeon: do a posting read in evergreen_set_irq
+* 7d5b23f drm/radeon: fix DRM_IOCTL_RADEON_CS oops
+* e9ab6db arm64: Invalidate the TLB corresponding to intermediate page table levels
+* bf91097 mmu_gather: move minimal range calculations into generic code
+* 0ef7814 arm64: Honor __GFP_ZERO in dma allocations
+* e8f117f tcp: make connect() mem charging friendly
+* 34ca18c net: compat: Update get_compat_msghdr() to match copy_msghdr_from_user() behaviour
+* b182ecc tcp: fix tcp fin memory accounting
+* 7f249ac ipv6: fix backtracking for throw routes
+* 5039b8c Revert "net: cx82310_eth: use common match macro"
+* 3d1acc9 rxrpc: bogus MSG_PEEK test in rxrpc_recvmsg()
+* 02bfe56 caif: fix MSG_OOB test in caif_seqpkt_recvmsg()
+* e1f2092 inet_diag: fix possible overflow in inet_diag_dump_one_icsk()
+* b9befa4 virtio-net: correctly delete napi hash
+* 6ba8661 rds: avoid potential stack overflow
+* c48cf4f net: sysctl_net_core: check SNDBUF and RCVBUF for min length
+* 563d919 net: fec: fix receive VLAN CTAG HW acceleration issue
+* 06e0dd7 net_sched: fix struct tc_u_hnode layout in u32
+* 6226858 sparc64: Fix several bugs in memmove().
+* 54762bf sparc: Touch NMI watchdog when walking cpus and calling printk
+* 4cd5bcc sparc: perf: Make counting mode actually work
+* 84763ad sparc: perf: Remove redundant perf_pmu_{en|dis}able calls
+* 4fb82ed sparc: semtimedop() unreachable due to comparison error
+* b8b07bd sparc32: destroy_context() and switch_mm() needs to disable interrupts.
 * 96e199f Linux 3.18.10
 * da7a053 cxl: Add missing return statement after handling AFU errror
 * 3bc64c1 cxl: Fix device_node reference counting
